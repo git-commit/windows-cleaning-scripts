@@ -38,15 +38,6 @@ sfc /scannow
 @echo.
 @echo Defragmentiert die Festplatten:
 defrag /c /u /v /x
-REM @echo.
-REM @echo.
-REM @echo Aktiviert den Ruhezustand:
-REM powercfg -h on
-@echo.
-@echo.
-@echo Fuegt der Registry den Befehl zum Herunterfahren des Rechners 1 Minute nach dem Neustart zu,
-@echo der Befehl wird nur einmal ausgeführt um den Rechner abzuschalten, wenn alle Punkte abgearbeitet wurden:
-REG ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" /v Shutdown /t REG_SZ /d "shutdown /s /t 60" /f
 @echo.
 @echo.
 @echo Startet den Rechner neu:
